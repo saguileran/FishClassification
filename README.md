@@ -3,4 +3,4 @@ Matlab codes used
 Summary report of summer research program UD
 
 
-Homepage: saguileran.github.io/FishClassification/
+Homepage: https://saguileran.github.io/FishClassification/
