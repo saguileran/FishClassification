@@ -1,9 +1,19 @@
 # FISH CLASSIFICATION
 Summary report of summer research program UD
 
-## Fysh Catalog 
-Ca
-## Delaware Bay
+
+## Exploring DataSets
+
+The datasets are explored using signal processing and matlab. 
+
+### Fysh Catalog 
+
+
+### Delaware Bay
+
+
+##
+
 
 ## Data Augmentation
 
