@@ -4,9 +4,9 @@ Summary report of summer research program UD
 
 ## Exploring DataSets
 
-The datasets are explored using signal processing and matlab. 
+The datasets are explored using matlab signal processing toolkit. The audio file is imported, resampled at 10000, and the Fourie transforme have been aplied calculating the time, frequency, and power spectrum, a mean can be done to dwarf the vaiales lenght.
 
-Importing the audio data and applying the Fourier transform is implement in the code Data.m.
+The Data.m file outputs are the metadata and the spectrum time series.
 
 ```Matlab
 clear all
@@ -81,41 +81,16 @@ save(['Data_',int2str(fin),'_',int2str(fend),'_SDXC1_2.mat'],'data','-v7.3')
 save(['MetaData_',int2str(fin),'_',int2str(fend),'_SDXC1_2.mat'],'meta_data','-v7.3')
 ```
 
-The first step is explore the whole data, plotting all the days spectrograms with high time resolution, using LongSpectrogram.m code
-
+The first step is explore the whole raw data by plotting dayly and the whole spectrograms with high time resolution, it is done by using LongSpectrogram.m code
+The channel can by choose with the variable c. The code structure is as follow
 
 ```Matlab
-clear all
-tic
-%% Choosing channel 
-cha = 'C2';
-
-%% Loading channel
-data_1 = load(['OldData/DataEvery20',cha,'/Data_1_96_SDXC1']).data;
-data_2 = load(['OldData/DataEvery20',cha,'/Data_1_33_SDXC1']).data;
-data_3 = load(['OldData/DataEvery20',cha,'/Data_1_138_SDXC2']).data;
-data_4 = load(['OldData/DataEvery20',cha,'/Data_1_139_SDXC3']).data;
-data_5 = load(['OldData/DataEvery20',cha,'/Data_1_27_SDXC4']).data;
-
-meta_data_1 = load(['OldData/DataEvery20',cha,'/MetaData_1_96_SDXC1']).meta_data;
-meta_data_2 = load(['OldData/DataEvery20',cha,'/MetaData_1_33_SDXC1']).meta_data;
-meta_data_3 = load(['OldData/DataEvery20',cha,'/MetaData_1_138_SDXC2']).meta_data;
-meta_data_4 = load(['OldData/DataEvery20',cha,'/MetaData_1_139_SDXC3']).meta_data;
-meta_data_5 = load(['OldData/DataEvery20',cha,'/MetaData_1_27_SDXC4']).meta_data;
-
-%% Channel 2
-% ch = '-C2';
-% data_11 = load(['OldData/DataEvery20-C1',ch,'/Data_1_96_SDXC1']).data;
-% data_21 = load(['OldData/DataEvery20-C1',ch,'/Data_1_33_SDXC1']).data;
-% data_31 = load(['OldData/DataEvery20-C1',ch,'/Data_1_138_SDXC2']).data;
-% data_41 = load(['OldData/DataEvery20-C1',ch,'/Data_1_139_SDXC3']).data;
-% data_51 = load(['OldData/DataEvery20-C1',ch,'/Data_1_27_SDXC4']).data;
+%% Impoting Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Combining data
 data = [data_1,data_2,data_3,data_4,data_5];
 meta_data = [meta_data_1,meta_data_2,meta_data_3,meta_data_4,meta_data_5];
-toc
-%DATA = data(i).P;%-data1(i).P;
 
 hold on
 for i=1:1:length(data) %length(combined)
@@ -145,12 +120,9 @@ set(gcf,'position',[0 0 1800 750])
 set(gca,'FontSize',25)
 
 hold off
-%xlim([Tin Tend]);
-
 datetick()%'keeplimits')
 xlim([Tin Tend]);
 
-toc
 %saveas(gcf,'All-C2-1k.png')
 ```
 
@@ -171,6 +143,8 @@ for k = 18:1:30
 end
 ```
 
+k is from 18 to 30 since the raw data is recorded from July 18 to 31 of 2013.
+
 
 ### Fysh Catalog 
 
@@ -182,6 +156,11 @@ end
 
 
 ## Data Augmentation
+
+To make data augmentation pytorch, python library, is used in the code DataAugmentation.ipynb.
+
+
+
 
 ## Claassification
 
