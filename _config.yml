@@ -7,7 +7,7 @@ excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
 # Layout
-show_social: false         # show footer
+show_social: true         # show footer
 show_excerpts: false       # show article excerpts on the home page
 show_frame: false           # adds a gray frame to the site
 show_sidebar: true        # show a sidebar instead of the usual header
