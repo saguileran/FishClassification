@@ -9,7 +9,7 @@ date_format: "%B %d, %Y"
 # Layout
 show_social: true         # show footer
 show_excerpts: false       # show article excerpts on the home page
-show_frame: false           # adds a gray frame to the site
+show_frame: true             # adds a gray frame to the site
 show_sidebar: true        # show a sidebar instead of the usual header
 
 # Menu
@@ -21,6 +21,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:kathryn.schuler@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/kschuler"}
 
+remote_theme: niklasbuschmann/contrast@v2.11
 
 plugins:
   - jekyll-remote-theme
