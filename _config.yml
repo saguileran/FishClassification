@@ -19,8 +19,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: "envelope", url: "mailto:snovoa@udel.edu"}
-  - {title: Github, icon: "github", url: "https://github.com/saguileran"}
+  - {title: Mail, icon: envelope, url: "mailto:snovoa@udel.edu"}
+  - {title: Github, icon: github, url: "https://github.com/saguileran"}
   
 
 remote_theme: niklasbuschmann/contrast@v2.11
