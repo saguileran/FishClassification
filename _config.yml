@@ -1,7 +1,7 @@
 
-title: "Kathryn Schuler"
-author: "Kathryn Schuler"
-description: "University of Pennsylvania"
+title: "Fish Classification"
+author: "Sebastian Aguilera Novoa"
+description: "Summer Report - University of Delaware"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -16,17 +16,12 @@ show_sidebar: false        # show a sidebar instead of the usual header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md"}
-  - {url: "/katie.pdf", title: CV}
-  - {url: "http://childlanglab.com", title: Lab}
-  - {file: "blog.md"}
-
-
+  - {file: "README.md"}
+  
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:kathryn.schuler@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/kschuler"}
-  - {title: Twitter, icon: twitter, url: "https://twitter.com/KathrynSchuler"}
-
+  
 
 remote_theme: niklasbuschmann/contrast@v2.11
 
