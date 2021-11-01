@@ -1,5 +1,4 @@
 ---
-layout: home
 title: Porject
 subtitle: Summer Report 2021 
 ---
