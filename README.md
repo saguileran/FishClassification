@@ -84,7 +84,7 @@ save(['MetaData_',int2str(fin),'_',int2str(fend),'_SDXC1_2.mat'],'meta_data','-v
 The first step is explore the whole raw data by plotting dayly and the whole spectrograms with high time resolution, it is done by using LongSpectrogram.m code
 The channel can by choose with the variable c. The code structure is as follow
 
-```Matlab
+```matlab
 %% Impoting Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
