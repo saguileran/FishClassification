@@ -8,7 +8,7 @@ The datasets are explored using matlab signal processing toolkit. The audio file
 
 The Data.m file outputs are the metadata and the spectrum time series.
 
-```Matlab
+```matlab
 clear all
 
 pat = '/data/badiey/fromENGR/DATA/2_RAW/14_FISH_SOUNDS/Raw_Recorded_Data/SDXC1/Converted Data_1/';
