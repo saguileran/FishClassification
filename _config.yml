@@ -1,13 +1,13 @@
-title: Leap Day theme
-description: Leap Day is a theme for GitHub Pages.
+title: Fish Classification
+description: 2021 Summer research program report at UD
 show_downloads: true
 google_analytics:
 
 
 # Layout
 show_social: true         # show footer
-show_excerpts: false       # show article excerpts on the home page
-show_frame: false           # adds a gray frame to the site
+show_excerpts: false      # show article excerpts on the home page
+show_frame: true         # adds a gray frame to the site
 show_sidebar: true        # show a sidebar instead of the usual header
 
 theme: jekyll-theme-leap-day
