@@ -1,6 +1,6 @@
 # SUMMER REPORT
 
-This is the report of the summer program done at the University of Delaware on 2021. The two main goals of the research are explore and characterize a raw dataset recorded by professor Mohesen Badiey at 2013 in the Delaware Bay and identify fish audios in the raw dataset using fish audio samples recordd by Marie Poland, William H, and Johns Hopkins at 1970
+This is the report of the summer program done at the University of Delaware on 2021. The two main goals of the research are explore and characterize a raw dataset recorded by professor Mohesen Badiey at 2013 in the Delaware Bay and identify fish audios in the raw dataset using fish audio [catalog](https://github.com/saguileran/FishClassification/blob/main/Catalog.pdf) recordd by Marie Poland, William H, and Johns Hopkins at 1970.
 
 
 ## Exploring DataSets
