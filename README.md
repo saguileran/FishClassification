@@ -7,7 +7,7 @@ This is the report of the summer program done at the University of Delaware on 2
 
 The datasets are explored using matlab signal processing toolkit. The audio file is imported, resampled at 10000, and the Fourie transforme have been aplied calculating the time, frequency, and power spectrum, a mean can be done to dwarf the vaiales lenght.
 
-The Data.m file outputs are the metadata and the spectrum time series.
+The [Data.m](https://github.com/saguileran/FishClassification/blob/main/Data.m) file outputs are the metadata and the spectrum time series.
 
 ```matlab
 clear all
@@ -82,7 +82,7 @@ save(['Data_',int2str(fin),'_',int2str(fend),'_SDXC1_2.mat'],'data','-v7.3')
 save(['MetaData_',int2str(fin),'_',int2str(fend),'_SDXC1_2.mat'],'meta_data','-v7.3')
 ```
 
-The first step is explore the whole raw data by plotting dayly and the whole spectrograms with high time resolution, it is done by using LongSpectrogram.m code
+The first step is explore the whole raw data by plotting dayly and the whole spectrograms with high time resolution, it is done by using [Long.m](https://github.com/saguileran/FishClassification/blob/main/Data.m) code
 The channel can by choose with the variable c. The code structure is as follow
 
 ```matlab
@@ -153,16 +153,13 @@ k is from 18 to 30 since the raw data is recorded from July 18 to 31 of 2013.
 ### Delaware Bay
 
 
-##
-
-
 ## Data Augmentation
 
-To make data augmentation pytorch, python library, is used in the code DataAugmentation.ipynb.
+To make data augmentation pytorch python library is used in the code DataAugmentation.ipynb.
 
 
 
 
 ## Claassification
 
-Homepage: https://saguileran.github.io/FishClassification/
+Homepage: [saguileran.github.io/FishClassification/](https://saguileran.github.io/FishClassification/)
