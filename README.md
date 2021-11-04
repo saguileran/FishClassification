@@ -155,7 +155,7 @@ k is from 18 to 30 since the raw data is recorded from July 18 to 31 of 2013.
 
 ## Data Augmentation
 
-To make data augmentation pytorch python library is used in the code DataAugmentation.ipynb.
+To make data augmentation the pytorch python library is used in the code DataAugmentation.ipynb.
 
 
 
